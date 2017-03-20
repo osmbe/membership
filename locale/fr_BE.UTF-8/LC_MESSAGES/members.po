@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-20 17:41+0100\n"
+"PO-Revision-Date: 2017-03-20 17:45+0100\n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Jonathan Beliën\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.12\n"
+
+msgid "Become a member"
+msgstr "Devenir membre"
+
+msgid "OpenStreetMap Belgium"
+msgstr "OpenStreetMap Belgique"
+
+msgid "If you just want to subscribe to the newsletter"
+msgstr "Si vous voulez seulement vous inscrire à la newsletter"
+
+msgid "click here"
+msgstr "cliquez ici"
+
+msgid "Oops"
+msgstr "Oups"
+
+msgid "More details about this error."
+msgstr "Plus de détails sur cette erreur."
+
+msgid " and subscribed to our newsletter"
+msgstr "et inscrit à la newsletter"
+
+msgid "Well done"
+msgstr "Bien joué"
+
+msgid "You are now a member of OpenStreetMap Belgium"
+msgstr "Vous êtes maintenant un membre d'OpenStreetMap Belgique"
+
+msgid "Email address"
+msgstr "Adresse e-mail"
+
+msgid "We'll never share your email with anyone else."
+msgstr "Nous ne partagerons jamais votre adresse avec quelqu'un d'autre."
+
+msgid "OpenStreetMap username"
+msgstr "Nom d'utilisateur OpenStreetMap"
+
+msgid "First name"
+msgstr "Prénom"
+
+msgid "Last name"
+msgstr "Nom de famille"
+
+msgid "City / Town / Village"
+msgstr "Ville / Village"
+
+msgid "Postal code"
+msgstr "Code postal"
+
+msgid "Prefered languages"
+msgstr "Langues préférées"
+
+msgid "Dutch"
+msgstr "Néérlandais"
+
+msgid "French"
+msgstr "Français"
+
+msgid "English"
+msgstr "Anglais"
+
+msgid "Subscribe to the <em>OpenStreetMap Belgium Newsletter</em>"
+msgstr "Inscription à la <em>newsletter OpenStreetMap Belgique</em>"
+
+msgid "Submit"
+msgstr "Enregistrer"
+
+msgid "List of members"
+msgstr "Liste des membres"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "OSM Username"
+msgstr "Identifiant OSM"
+
+msgid "Location"
+msgstr "Ville"
+
+msgid "Subscribe to the newsletter"
+msgstr "Inscription à la newsletter"
+
+msgid "If you also want to become a member"
+msgstr "Si vous voulez également devenir membre"
+
+msgid "You are now subscribed to the OpenStreetMap Belgium newsletter"
+msgstr "Vous êtes maintenant inscrit à la newsletter OpenStreetMap Belgique"
