@@ -74,7 +74,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
       <h1><i class="fa fa-envelope-o" aria-hidden="true"></i> <?= _('Subscribe to the newsletter') ?></h1>
       <hr>
       <p>
-        The Newsletter will let you know when we are organizing some event (Missing Maps, a meeting, a presentation) or when we have Big News. Don't expect more than one or two messages per month.
+        <?= _('The Newsletter will let you know when we are organizing some event (Missing Maps, a meeting, a presentation) or when we have Big News. Don\'t expect more than one or two messages per month.') ?>
       </p>
       <p>
         <?= _('If you also want to become a member') ?>, <a href="index.php?lang=<?= $lang ?>"><?= _('click here') ?></a> !
