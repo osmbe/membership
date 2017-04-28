@@ -50,7 +50,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
     $config['mailchimp']['members.interests.nl'] => (!is_null($member->languages) && in_array('nl', $member->languages))
   );
 
-  $url_members = 'https://us13.api.mailchimp.com/3.0/lists/cb93597490/members/'.md5($data['email_address']);
+  $url_members = 'https://us13.api.mailchimp.com/3.0/lists/'.$config['mailchimp']['members.id'].'/members/'.md5($data['email_address']);
   $list_members = mailchimp_api($url_members, $data);
   //var_dump($list_members);
   if ($list_members['code'] !== 200) {
@@ -64,7 +64,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
       $config['mailchimp']['newsletter.interests.nl'] => (!is_null($member->languages) && in_array('nl', $member->languages))
     );
 
-    $url_newsletter = 'https://us13.api.mailchimp.com/3.0/lists/5c2416bba6/members/'.md5($data['email_address']);
+    $url_newsletter = 'https://us13.api.mailchimp.com/3.0/lists/'.$config['mailchimp']['newsletter.id'].'/members/'.md5($data['email_address']);
     $list_newsletter = mailchimp_api($url_newsletter, $data);
     //var_dump($list_newsletter);
     if ($list_newsletter['code'] !== 200) {
@@ -86,6 +86,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
   </head>
   <body>
     <div class="container" style="margin: 25px auto;">
+      <a href="list.php?lang=<?= $lang ?>" class="btn btn-primary pull-right" style="margin-top: 5px;"><i class="fa fa-list" aria-hidden="true"></i> <?= _('List') ?></a>
       <h1><i class="fa fa-users" aria-hidden="true"></i> <?= _('Become a member') ?></h1>
       <hr>
       <p>

@@ -50,7 +50,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
     $config['mailchimp']['newsletter.interests.nl'] => (!is_null($member->languages) && in_array('nl', $member->languages))
   );
 
-  $url_newsletter = 'https://us13.api.mailchimp.com/3.0/lists/5c2416bba6/members/'.md5($data['email_address']);
+  $url_newsletter = 'https://us13.api.mailchimp.com/3.0/lists/'.$config['mailchimp']['newsletter.id'].'/members/'.md5($data['email_address']);
   $list_newsletter = mailchimp_api($url_newsletter, $data);
   //var_dump($list_newsletter);
   if ($list_newsletter['code'] !== 200) {

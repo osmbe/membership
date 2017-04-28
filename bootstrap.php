@@ -1,4 +1,5 @@
 <?php
+require('class.member.php');
 require('functions.php');
 
 /* ***********************************************
