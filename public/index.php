@@ -96,8 +96,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
         <strong><?= _('Oops') ?>!</strong> <?= _($error->detail) ?><br>
         <small><a href="<?= _($error->type) ?>" target="_blank" class="alert-link"><?= _('More details about this error.') ?></a></small>
       </div>
-<?php } ?>
-<?php else if (isset($success) && $success === TRUE) { ?>
+<?php } else if (isset($success) && $success === TRUE) { ?>
       <div class="alert alert-success" role="alert">
         <strong><?= _('Well done') ?>!</strong> <?= _('You are now a member of OpenStreetMap Belgium').($member->newsletter === TRUE ? ' '._(' and subscribed to our newsletter') : '') ?> !<br>
       </div>
