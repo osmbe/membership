@@ -55,9 +55,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
   //var_dump($list_members);
   if ($list_members['code'] !== 200) {
     $error = $list_members['response'];
-  }
-
-  if (!isset($error) && $member->newsletter === TRUE) {
+  } else if (!isset($error) && $member->newsletter === TRUE) {
     $data['interests'] = array(
       $config['mailchimp']['newsletter.interests.en'] => (!is_null($member->languages) && in_array('en', $member->languages)),
       $config['mailchimp']['newsletter.interests.fr'] => (!is_null($member->languages) && in_array('fr', $member->languages)),
@@ -69,9 +67,9 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
     //var_dump($list_newsletter);
     if ($list_newsletter['code'] !== 200) {
       $error = $list_newsletter['response'];
+    } else {
+      $success = TRUE;
     }
-
-    $success = TRUE;
   }
 }
 ?>
@@ -99,7 +97,7 @@ if (isset($_POST['action'], $_POST['email'], $_POST['action']) && $_POST['action
         <small><a href="<?= _($error->type) ?>" target="_blank" class="alert-link"><?= _('More details about this error.') ?></a></small>
       </div>
 <?php } ?>
-<?php if (isset($success) && $success === TRUE) { ?>
+<?php else if (isset($success) && $success === TRUE) { ?>
       <div class="alert alert-success" role="alert">
         <strong><?= _('Well done') ?>!</strong> <?= _('You are now a member of OpenStreetMap Belgium').($member->newsletter === TRUE ? ' '._(' and subscribed to our newsletter') : '') ?> !<br>
       </div>
