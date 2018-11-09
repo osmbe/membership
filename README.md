@@ -1,5 +1,9 @@
 # OpenStreetMap Belgium Membership Form
 
+:warning: **This tool is deprecated ! We switched to <https://github.com/jbelien/mailchimp-osm> !**
+
+---
+
 ## Live registration form
 
 * English : <https://members.osm.be/index.php?lang=en_US>
